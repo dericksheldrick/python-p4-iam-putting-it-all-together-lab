@@ -53,7 +53,7 @@ with app.app_context():
             minutes_to_complete=randint(15,90),
         )
 
-        recipe.user = rc(users)
+        recipe.user_id = rc(users).id
 
         recipes.append(recipe)
 
